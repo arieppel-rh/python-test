@@ -1,2 +1,3 @@
 FROM registry.redhat.io/rhel8/python-36
-RUN python project/main.py
+ADD project/main.py /main.py
+RUN python main.py
